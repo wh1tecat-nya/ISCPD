@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "ES2017",
+		"module": "CommonJS",
+		"jsx": "react-native",
+		"strict": true,
+		"typeRoots": ["./node_modules/@types", "../../typings"],
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"strictPropertyInitialization": false
+	},
+	"include": ["src/*"],
+	"exclude": ["node_modules", "test"]
+}
