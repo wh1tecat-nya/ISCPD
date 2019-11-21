@@ -1,0 +1,13 @@
+{
+	"name": "ISCPD-Web",
+	"version": "0.0.1",
+	"description": "for Browser",
+	"author": "wh1tecat <wh1tecat.sec@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"ISCPD-Contents": "^0.0.1"
+	},
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4"
+	}
+}

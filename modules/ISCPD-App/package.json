@@ -1,0 +1,29 @@
+{
+	"name": "ISCPD-App",
+	"version": "0.0.1",
+	"description": "for mobile",
+	"author": "wh1tecat <wh1tecat.sec@gmail.com>",
+	"main": "./AppEntry.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"web": "expo start --web",
+		"eject": "expo eject"
+	},
+	"dependencies": {
+		"ISCPD-Contents": "^0.0.1",
+		"expo": "^35.0.0",
+		"react": "16.8.3",
+		"react-dom": "16.8.3",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+		"react-native-web": "^0.11.7"
+	},
+	"devDependencies": {
+		"@babel/runtime": "^7.7.2",
+		"@types/react": "^16.8.23",
+		"@types/react-native": "^0.57.65",
+		"babel-preset-expo": "^7.0.0"
+	}
+}

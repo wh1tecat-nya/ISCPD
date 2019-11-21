@@ -24,7 +24,7 @@ module.exports = {
 		"react/jsx-boolean-value": "error",
 		"react/no-redundant-should-component-update": "error",
 		"react/no-typos": "error",
-		"react/no-unused-state": "error",
+		"react/no-unused-state": "warn",
 		"react/no-unused-prop-types": "error",
 		"react/no-deprecated": "error",
 		"react/no-direct-mutation-state": "error",
@@ -35,7 +35,6 @@ module.exports = {
 		"import/named": "off",
 		"import/no-duplicates": "error",
 		// https://github.com/bradzacher/eslint-plugin-typescript/issues/2
-		"no-unused-vars": "off",
 	},
 	settings: {
 		"import/resolver": {
