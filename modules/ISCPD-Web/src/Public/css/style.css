@@ -1,0 +1,29 @@
+.header {
+	border: 1px solid black;
+	border-bottom: 0;
+}
+
+.content {
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid black;
+	border-bottom: 0;
+}
+
+.col {
+	border-right: 1px solid black;
+	flex: auto;
+}
+
+.title {
+	text-align: center;
+}
+.value {
+	text-align: left;
+}
