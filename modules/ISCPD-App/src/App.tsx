@@ -23,10 +23,7 @@ export default function App() {
 				source={{ uri: "https://github.com/facebook/react-native" }}
 				style={{ marginTop: 20 }}
 			/> */}
-			<WebView
-				style={{ marginTop: 30, marginLeft: 30 }}
-				source={{ html: htmlString }}
-			/>
+			<WebView style={{ marginTop: 30, marginLeft: 30 }} source={{ html: htmlString }} />
 		</>
 	);
 }
