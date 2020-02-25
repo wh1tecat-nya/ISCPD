@@ -5,21 +5,27 @@ module.exports = {
 		"eslint:recommended",
 		"standard",
 		"plugin:react/recommended",
+		"plugin:import/typescript",
 		"plugin:import/recommended",
 		"plugin:prettier/recommended",
 		"prettier/standard",
 	],
-	plugins: ["react", "@typescript-eslint"],
+	plugins: ["react", "@typescript-eslint", "import"],
+	"ecmaFeatures": {
+		"jsx": true,
+	},
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,
 		},
 	},
 	env: {
-		"jest": true
+		"browser": true,
 	},
 	rules: {
 		"no-console": "off",
+		"no-unused-vars": "warn",
+		"no-irregular-whitespace": "off",
 		"react/display-name": "off",
 		"react/jsx-boolean-value": "error",
 		"react/no-redundant-should-component-update": "error",
@@ -42,5 +48,6 @@ module.exports = {
 				extensions: [".js", ".ts", ".tsx"],
 			},
 		},
+		"import/core-modules": ["react"]
 	},
 };
