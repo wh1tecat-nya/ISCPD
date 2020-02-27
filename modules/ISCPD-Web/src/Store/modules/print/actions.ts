@@ -1,8 +1,7 @@
 import { actionCreatorFactory } from "typescript-fsa";
 import { asyncFactory } from "typescript-fsa-redux-thunk";
-import print from "print-js";
 
-import { generate } from "../../../Utils";
+import { generate, print } from "../../../Utils";
 import { State, FormHandlers } from "../../../Types";
 
 const actionCreator = actionCreatorFactory("print");
@@ -66,12 +65,11 @@ export const printInputTemplate = thunkCreator<PrintInputPayload, null>(
 		const printString = generate(template.parentElement);
 
 		print({
-			type: "raw-html",
-			printSize: printSize,
-			documentTitle: templateName,
-			style: styleTagTexts,
+			printSize,
+			title: templateName,
 			css: "https://unpkg.com/paper-css@0.4.1/paper.min.css",
-			printable: printString,
+			style: styleTagTexts,
+			contents: printString,
 		});
 	}
 );
