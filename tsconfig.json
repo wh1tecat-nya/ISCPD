@@ -1,14 +1,17 @@
 {
+	"compileOnSave": true,
 	"compilerOptions": {
-		"target": "ES2017",
+		"target": "es2017",
 		"module": "CommonJS",
-		"jsx": "react-native",
+		"jsx": "react",
+		"outDir": "./dist",
+		"incremental": true,
+		"allowSyntheticDefaultImports": true,
 		"strict": true,
-		"typeRoots": ["./node_modules/@types", "../../typings"],
-		"esModuleInterop": true,
+		"noImplicitReturns": true,
+		"strictPropertyInitialization": false,
 		"resolveJsonModule": true,
-		"strictPropertyInitialization": false
-	},
-	"include": ["src/*"],
-	"exclude": ["node_modules", "test"]
+		"esModuleInterop": true,
+		"moduleResolution": "node"
+	}
 }

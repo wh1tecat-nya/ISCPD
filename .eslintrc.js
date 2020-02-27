@@ -5,26 +5,32 @@ module.exports = {
 		"eslint:recommended",
 		"standard",
 		"plugin:react/recommended",
+		"plugin:import/typescript",
 		"plugin:import/recommended",
 		"plugin:prettier/recommended",
 		"prettier/standard",
 	],
-	plugins: ["react", "@typescript-eslint"],
+	plugins: ["react", "@typescript-eslint", "import"],
+	"ecmaFeatures": {
+		"jsx": true,
+	},
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,
 		},
 	},
 	env: {
-		"jest": true
+		"browser": true,
 	},
 	rules: {
 		"no-console": "off",
+		"no-unused-vars": "warn",
+		"no-irregular-whitespace": "off",
 		"react/display-name": "off",
 		"react/jsx-boolean-value": "error",
 		"react/no-redundant-should-component-update": "error",
 		"react/no-typos": "error",
-		"react/no-unused-state": "error",
+		"react/no-unused-state": "warn",
 		"react/no-unused-prop-types": "error",
 		"react/no-deprecated": "error",
 		"react/no-direct-mutation-state": "error",
@@ -35,7 +41,6 @@ module.exports = {
 		"import/named": "off",
 		"import/no-duplicates": "error",
 		// https://github.com/bradzacher/eslint-plugin-typescript/issues/2
-		"no-unused-vars": "off",
 	},
 	settings: {
 		"import/resolver": {
@@ -43,5 +48,6 @@ module.exports = {
 				extensions: [".js", ".ts", ".tsx"],
 			},
 		},
+		"import/core-modules": ["react"]
 	},
 };

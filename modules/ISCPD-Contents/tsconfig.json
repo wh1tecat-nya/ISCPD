@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2015",
+		"jsx": "react",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"declaration": true,
+		"types": ["react"],
+		"lib": ["es2018", "dom"],
+		"outDir": "./dist",
+	},
+	"exclude": ["node_modules"],
+	"include": ["src"]
+}

@@ -16,6 +16,7 @@ dist
 .npm
 .yarn-integrity
 .eslintcache
+.cache/
 
 # userfiles
 .DS_Store
